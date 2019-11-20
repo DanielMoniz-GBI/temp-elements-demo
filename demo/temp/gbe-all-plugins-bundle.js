@@ -86,10 +86,44 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/@groupby/elements-events/dist/cache/cache.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@groupby/elements-events/dist/cache/cache.js ***!
-  \*******************************************************************/
+/***/ "../elements-events/dist/beacons/beacons.js":
+/*!**************************************************!*\
+  !*** ../elements-events/dist/beacons/beacons.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+/** The event to trigger a search beacon. */
+exports.TRACKER_SEARCH = 'gbe::tracker::search';
+//# sourceMappingURL=beacons.js.map
+
+/***/ }),
+
+/***/ "../elements-events/dist/beacons/index.js":
+/*!************************************************!*\
+  !*** ../elements-events/dist/beacons/index.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+__export(__webpack_require__(/*! ./beacons */ "../elements-events/dist/beacons/beacons.js"));
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "../elements-events/dist/cache/cache.js":
+/*!**********************************************!*\
+  !*** ../elements-events/dist/cache/cache.js ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -106,10 +140,10 @@ exports.CACHE_ERROR = 'gbe::cache_error';
 
 /***/ }),
 
-/***/ "./node_modules/@groupby/elements-events/dist/cache/index.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@groupby/elements-events/dist/cache/index.js ***!
-  \*******************************************************************/
+/***/ "../elements-events/dist/cache/index.js":
+/*!**********************************************!*\
+  !*** ../elements-events/dist/cache/index.js ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -119,15 +153,15 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(/*! ./cache */ "./node_modules/@groupby/elements-events/dist/cache/cache.js"));
+__export(__webpack_require__(/*! ./cache */ "../elements-events/dist/cache/cache.js"));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
-/***/ "./node_modules/@groupby/elements-events/dist/index.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/@groupby/elements-events/dist/index.js ***!
-  \*************************************************************/
+/***/ "../elements-events/dist/index.js":
+/*!****************************************!*\
+  !*** ../elements-events/dist/index.js ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -137,17 +171,18 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(/*! ./cache */ "./node_modules/@groupby/elements-events/dist/cache/index.js"));
-__export(__webpack_require__(/*! ./sayt */ "./node_modules/@groupby/elements-events/dist/sayt/index.js"));
-__export(__webpack_require__(/*! ./search */ "./node_modules/@groupby/elements-events/dist/search/index.js"));
+__export(__webpack_require__(/*! ./beacons */ "../elements-events/dist/beacons/index.js"));
+__export(__webpack_require__(/*! ./cache */ "../elements-events/dist/cache/index.js"));
+__export(__webpack_require__(/*! ./sayt */ "../elements-events/dist/sayt/index.js"));
+__export(__webpack_require__(/*! ./search */ "../elements-events/dist/search/index.js"));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
-/***/ "./node_modules/@groupby/elements-events/dist/sayt/autocomplete-list.js":
-/*!******************************************************************************!*\
-  !*** ./node_modules/@groupby/elements-events/dist/sayt/autocomplete-list.js ***!
-  \******************************************************************************/
+/***/ "../elements-events/dist/sayt/autocomplete-list.js":
+/*!*********************************************************!*\
+  !*** ../elements-events/dist/sayt/autocomplete-list.js ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -160,10 +195,10 @@ exports.AUTOCOMPLETE_ACTIVE_TERM = 'gbe::autocomplete_active_term';
 
 /***/ }),
 
-/***/ "./node_modules/@groupby/elements-events/dist/sayt/autocomplete.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/@groupby/elements-events/dist/sayt/autocomplete.js ***!
-  \*************************************************************************/
+/***/ "../elements-events/dist/sayt/autocomplete.js":
+/*!****************************************************!*\
+  !*** ../elements-events/dist/sayt/autocomplete.js ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -180,10 +215,10 @@ exports.AUTOCOMPLETE_ERROR = 'gbe::autocomplete_error';
 
 /***/ }),
 
-/***/ "./node_modules/@groupby/elements-events/dist/sayt/index.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@groupby/elements-events/dist/sayt/index.js ***!
-  \******************************************************************/
+/***/ "../elements-events/dist/sayt/index.js":
+/*!*********************************************!*\
+  !*** ../elements-events/dist/sayt/index.js ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -193,18 +228,18 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(/*! ./autocomplete */ "./node_modules/@groupby/elements-events/dist/sayt/autocomplete.js"));
-__export(__webpack_require__(/*! ./autocomplete-list */ "./node_modules/@groupby/elements-events/dist/sayt/autocomplete-list.js"));
-__export(__webpack_require__(/*! ./products */ "./node_modules/@groupby/elements-events/dist/sayt/products.js"));
-__export(__webpack_require__(/*! ./sayt */ "./node_modules/@groupby/elements-events/dist/sayt/sayt.js"));
+__export(__webpack_require__(/*! ./autocomplete */ "../elements-events/dist/sayt/autocomplete.js"));
+__export(__webpack_require__(/*! ./autocomplete-list */ "../elements-events/dist/sayt/autocomplete-list.js"));
+__export(__webpack_require__(/*! ./products */ "../elements-events/dist/sayt/products.js"));
+__export(__webpack_require__(/*! ./sayt */ "../elements-events/dist/sayt/sayt.js"));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
-/***/ "./node_modules/@groupby/elements-events/dist/sayt/products.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/@groupby/elements-events/dist/sayt/products.js ***!
-  \*********************************************************************/
+/***/ "../elements-events/dist/sayt/products.js":
+/*!************************************************!*\
+  !*** ../elements-events/dist/sayt/products.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -221,10 +256,10 @@ exports.SAYT_PRODUCTS_ERROR = 'gbe::sayt_products_error';
 
 /***/ }),
 
-/***/ "./node_modules/@groupby/elements-events/dist/sayt/sayt.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/@groupby/elements-events/dist/sayt/sayt.js ***!
-  \*****************************************************************/
+/***/ "../elements-events/dist/sayt/sayt.js":
+/*!********************************************!*\
+  !*** ../elements-events/dist/sayt/sayt.js ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -239,10 +274,10 @@ exports.SAYT_SHOW = 'gbe::sayt_show';
 
 /***/ }),
 
-/***/ "./node_modules/@groupby/elements-events/dist/search/index.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@groupby/elements-events/dist/search/index.js ***!
-  \********************************************************************/
+/***/ "../elements-events/dist/search/index.js":
+/*!***********************************************!*\
+  !*** ../elements-events/dist/search/index.js ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -252,16 +287,16 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(/*! ./search */ "./node_modules/@groupby/elements-events/dist/search/search.js"));
-__export(__webpack_require__(/*! ./searchbox */ "./node_modules/@groupby/elements-events/dist/search/searchbox.js"));
+__export(__webpack_require__(/*! ./search */ "../elements-events/dist/search/search.js"));
+__export(__webpack_require__(/*! ./searchbox */ "../elements-events/dist/search/searchbox.js"));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
-/***/ "./node_modules/@groupby/elements-events/dist/search/search.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/@groupby/elements-events/dist/search/search.js ***!
-  \*********************************************************************/
+/***/ "../elements-events/dist/search/search.js":
+/*!************************************************!*\
+  !*** ../elements-events/dist/search/search.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -278,10 +313,10 @@ exports.SEARCH_ERROR = 'gbe::search_error';
 
 /***/ }),
 
-/***/ "./node_modules/@groupby/elements-events/dist/search/searchbox.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/@groupby/elements-events/dist/search/searchbox.js ***!
-  \************************************************************************/
+/***/ "../elements-events/dist/search/searchbox.js":
+/*!***************************************************!*\
+  !*** ../elements-events/dist/search/searchbox.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10401,7 +10436,7 @@ function plural(ms, n, name) {
 /* WEBPACK VAR INJECTION */(function(global) {/*!
  * The buffer module from node.js, for the browser.
  *
- * @author   Feross Aboukhadijeh <http://feross.org>
+ * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
  * @license  MIT
  */
 /* eslint-disable no-proto */
@@ -13369,7 +13404,6 @@ module.exports = {
 var utils = __webpack_require__(/*! ./utils */ "./node_modules/qs/lib/utils.js");
 
 var has = Object.prototype.hasOwnProperty;
-var isArray = Array.isArray;
 
 var defaults = {
     allowDots: false,
@@ -13450,12 +13484,8 @@ var parseValues = function parseQueryStringValues(str, options) {
             val = interpretNumericEntities(val);
         }
 
-        if (val && typeof val === 'string' && options.comma && val.indexOf(',') > -1) {
+        if (val && options.comma && val.indexOf(',') > -1) {
             val = val.split(',');
-        }
-
-        if (part.indexOf('[]=') > -1) {
-            val = isArray(val) ? [val] : val;
         }
 
         if (has.call(obj, key)) {
@@ -13960,7 +13990,6 @@ var arrayToObject = function arrayToObject(source, options) {
 };
 
 var merge = function merge(target, source, options) {
-    /* eslint no-param-reassign: 0 */
     if (!source) {
         return target;
     }
@@ -14896,7 +14925,7 @@ module.exports = g;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var elements_events_1 = __webpack_require__(/*! @groupby/elements-events */ "./node_modules/@groupby/elements-events/dist/index.js");
+var elements_events_1 = __webpack_require__(/*! @groupby/elements-events */ "../elements-events/dist/index.js");
 /**
  * The GroupBy Elements cache driver plugin.
  * This plugin exposes an event-based interface to the GB Elements cache.
@@ -15553,7 +15582,7 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var elements_events_1 = __webpack_require__(/*! @groupby/elements-events */ "./node_modules/@groupby/elements-events/dist/index.js");
+var elements_events_1 = __webpack_require__(/*! @groupby/elements-events */ "../elements-events/dist/index.js");
 /**
  * Driver plugin that serves as the link between the Sayt data source
  * and the View layer. This plugin is responsible for listening to events,
@@ -15844,7 +15873,7 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var elements_events_1 = __webpack_require__(/*! @groupby/elements-events */ "./node_modules/@groupby/elements-events/dist/index.js");
+var elements_events_1 = __webpack_require__(/*! @groupby/elements-events */ "../elements-events/dist/index.js");
 /**
  * This plugin is responsible for exposing events that allow
  * for interacting with GroupBy's Search API.
